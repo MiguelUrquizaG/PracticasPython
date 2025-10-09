@@ -3,6 +3,8 @@ Implementa una función que calcule el factorial de un número. Recuerda que el 
 el producto de todos los números desde ese número hasta 1. Por ejemplo, el factorial de 3, 3!, es 6
 '''
 
+print("Bienvenido al programa, este permite calcular el factorial de un número")
+
 num = int(input("Introduzca el número para realizar el factorial: "))
 factorial=num
 numARestar = num -1
@@ -14,3 +16,5 @@ while numARestar is not 0:
     
 
 print(f'El factorial de {num} es {factorial}')
+
+print("Gracias por usar el programa.")

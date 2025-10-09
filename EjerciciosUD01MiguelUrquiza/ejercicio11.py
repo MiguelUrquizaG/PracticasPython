@@ -5,7 +5,7 @@ números.
 '''
 import time
 
-print("Bienvenido al programa")
+print("Bienvenido al programa, este te permitira ingresar numeros hasta que llegues al número inicial")
 
 numInicial = int(input("Introduce el número a alcanzar: "))
 sumaNumeros=0;
@@ -33,6 +33,8 @@ if sumaNumeros is numInicial:
     print(f'Has alcanzado el objetivo')
     print(f'El listado de números es: {listaNums}')
     print(f'El número a alcanzar era {numInicial}')
+
+print("Gracias por usar el programa")
 
 '''else:
     print(f'Superaste el número inicial {numInicial}.')

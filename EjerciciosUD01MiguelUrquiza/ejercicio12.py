@@ -21,3 +21,5 @@ if acertado:
 else:
     print(f'No has podido adivinarlo el número era el: {numAleatorio}')
 
+
+print("Gracias por utilizar el programa.")

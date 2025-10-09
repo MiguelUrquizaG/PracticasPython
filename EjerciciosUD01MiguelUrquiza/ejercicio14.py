@@ -3,6 +3,8 @@ Crea una función en python, triangulo, que reciba un número entero, e imprima 
 pantalla. Este sería el resultado de llamar a triangulo(5)
 '''
 
+print("Bienvenido, este programa genera un triángulo en base a la medida que le digas")
+
 triangulo = int(input("Introduce la longitud: "))
 
 for i in range(1,triangulo+1):
@@ -22,3 +24,6 @@ for i in range(0,triangulo):
 
 for j in range(triangulo,0,-1):
     print("*" *j)
+
+
+print("Gracias por utilizar el programa")

@@ -1,3 +1,6 @@
+
+print("Bievenido, este programa indica que número es mayor entre dos")
+
 num1 = int(input("Introduzca el primer número: "))
 num2 = int(input("Introduzca el segundo número: "))
 
@@ -8,3 +11,5 @@ elif num1 == num2:
 else:
     print(f'El número {num2} (que es el segundo introducido) es mayor que el {num1}.')
 
+
+print("Gracias por usar el programa.")
