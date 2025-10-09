@@ -1,5 +1,5 @@
 
-triangulo = int(input("Introudce el tamaño del triángulo."))
+triangulo = int(input("Introduce el tamaño del triángulo: "))
 
 for i in range(0,triangulo):
     print("*"*i)

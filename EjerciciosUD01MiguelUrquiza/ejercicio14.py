@@ -16,3 +16,9 @@ for k in range(triangulo-1,0,-1):
 
     print()
 
+
+for i in range(0,triangulo):
+    print("*"*i)
+
+for j in range(triangulo,0,-1):
+    print("*" *j)
