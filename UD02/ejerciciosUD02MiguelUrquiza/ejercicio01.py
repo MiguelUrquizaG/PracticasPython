@@ -1,6 +1,8 @@
 #Ejemplo de listado, listas de un tipo de cosas
 lista = [1,2,3,4,5]
 lista2 =[7,8,9,10]
+lista3 = [9,2,1,4,5]
+listaCadena=["Miguel","Pedro","Juan","Pepe"]
 print("A continuación vamos a explicar las difrentes funcionalidades que pueden tener una lista.")
 print("-----------------------------------------------------------------------------------------------")
 print("1.Añadir al final de una lista.")
@@ -51,3 +53,112 @@ print(f'\t-A continuación modificaré los valores desde el índice 0 hasta el 2
 print(f'\t-Para ello utilizaremos lista[0:2] =[300]')
 lista[0:2]=[300]
 print(f'\t-El resultado es --> {lista}')
+print("-----------------------------------------------------------------------------------------------")
+print("7.Borrar elementos")
+print(f'\t-Para borrar un elemento de una lista hay dos formas: del lista[indiceAEliminar] o lista.remove(numeroaEliminar)')   
+print(f'\t-Observa esta lista --> {lista}')
+print(f'A continuación eliminaremos mendiante indice usando del lista[1]')
+del lista [1]
+print(f'\t-El resultado es --> {lista}')
+print(f'A continuación eliminaremos utilizando lista.remove(300) para eliminar el número 300')
+lista.remove(300)
+print(f'\t-El resultado es --> {lista}')
+print(f'\t-Cabe aclarar que si existen valores duplicados el remove solo elimina el primero que encuentre.')
+print(f'\t-Además de esas dos existe también la función .pop la cuál extrae el elemento de la lista y nos lo devuelve a la vez que lo elimina de la lista.')
+producto = lista.pop(1)
+print(f'El número extraído es: {producto}')
+print(f'\t-El resultado es --> {lista}')
+print(f'\t-También existe la forma de hacerlo mediante rangos haciendo lo siguiente')
+print(f'\t-lista[1:4]=[]')
+lista[1:4]=[]
+print(f'\t-El resultado es --> {lista}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'8.Borrado completo de una lista')
+print(f'\t-Hay dos formas utilizando lista.clear() o lista = []')
+print(f'\t-Observa esta lista --> {lista}')
+##lista.clear() Lo comento para poder seguir trabajando
+print(f'\t-El resultado es --> {lista}')
+##lista = []
+print(f'\t-El resultado es --> {lista}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'9.Encontrar un elemento')
+print(f'Podemos utilizar .index(elemento)')
+print(f'\t-Observa esta lista --> {lista}')
+print(f'{lista.index(3)}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'10.Pertenencia a un elemento')
+print(f'\t-Para este utilizamos el operador in')
+print(f'\t-0 in lista')
+print(f'\t-{0 in lista}')
+print(f'\t-9 in lista')
+print(f'\t-{9 in lista}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'11.Número de ocurrencias')
+print(f'\t-En este utilizaremos .count y nos indica la cantidad de veces que se repite un elemento en la lista')
+print(f'\t-En este caso utilizaré este ejemplo lista.count(10)')
+print(f'\t-Observa esta lista --> {lista}')
+print(f'\t-Resultado:{lista.count(10)}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'12.Convertir lista a cadena de texto')
+print(f'\t-Para convertir una lista en cadena debemos unir sus elementos mediante un separador ya sea "," - " "  o "|"')
+print(f'\t-En este caso utilizaré " ".join(lista)')
+#print(f'\t-Resultado: {','.join(lista)}')
+print(f'\t-En este caso da error ya que solo funciona si tus elementos de la lista son cadenas de texto.')
+print("-----------------------------------------------------------------------------------------------")
+print(f'13.Ordenar una lista')
+print(f'\t-Para hacer esto hay dos formas 1.sorted(lista) o 2. sorted(lista,reverse=True)')
+print(f'\t-Observa esta lista --> {lista3}')
+print(f'\t-Resultado normal: {sorted(lista3)}')
+print(f'\t-Resultado invertido: {sorted(lista3,reverse=True)}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'14.Longitud de una lista')
+print(f'\t-Para ello utilizaremos len(lista)')
+print(f'\t-{len(lista)}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'15.Iterar sobre una lista')
+for num in lista:
+    print(f'Num: {num}')
+
+print("-----------------------------------------------------------------------------------------------")
+print(f'16.Iterar usando enumeración')
+for i, numero in enumerate(lista):
+    print(i,numero)
+print("-----------------------------------------------------------------------------------------------")
+print(f'17.Iterar sobre múltiples listas.')
+print(f'\t-Se pueden iterar varias listas utilizando .zip(lista1,lista2)')
+for numero1,cadena in zip(lista,listaCadena):
+    print(numero1,cadena)
+
+print(f'\t- En el caso de que no tengan la misma longitud solo se repetirá hasta que acabe la más pequeña.')
+print(f'\t-Si queremos extraer la una lista de una mezcla de estas dos utilizaremos lo siguiente.')
+print(f'\t-{list(zip(lista,listaCadena))}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'18.Comparar listas')
+print(f'{lista>lista2}')
+print(f'\t-Esta función va comparando número a número')
+print("-----------------------------------------------------------------------------------------------")
+print(f'19.Cuidado con las copias.')
+print(f'-En este caso debemos tener cuidado ya que si modificamos una lista copiada podemos modificar la original.')
+print(f'\t-Lista antes de modificar la copia')
+print(f'\t-Lista original: {lista}')
+copia_lista1= lista
+copia_lista1[0]=-200
+print(f'\t-Lista después de modificar la copia')
+print(f'\t-Lista original: {lista}')
+print(f'\t-Copia: {copia_lista1}')
+print(f'\t-Existen dos posibles soluciones 1.copia_lista1 = lista.copy() 2.copia_lista1 = lista[:]')
+print(f'Ejemplo .copy con la lista1')
+copia_lista1 = lista.copy()
+copia_lista1[0] = 50
+print(f'\t-Lista: {lista}')
+print(f'\t-Copia lista: {copia_lista1}')
+print(f'Ejemplo [:] con la lista2')
+copia_lista2 = lista2[:]
+copia_lista2[0] =12321322
+print(f'\t-Lista: {lista2}')
+print(f'\t-Copia lista: {copia_lista2}')
+print("-----------------------------------------------------------------------------------------------")
+print(f'20.Veracidad múltiple')
+
+
+
