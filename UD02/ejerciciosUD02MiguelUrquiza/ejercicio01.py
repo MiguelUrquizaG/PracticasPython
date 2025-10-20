@@ -159,6 +159,29 @@ print(f'\t-Lista: {lista2}')
 print(f'\t-Copia lista: {copia_lista2}')
 print("-----------------------------------------------------------------------------------------------")
 print(f'20.Veracidad múltiple')
+print(f'\t-En este caso Python nos permite dos funciones: ')
+print(f'\t-1.all() para comprobar si se cumplen todas.')
+print(f'\t-2.any() para comprobar si se cumplen alguna.')
+print(f'\t-Estas listas trabajan sobre iterables.')
+print(f'\t-Para comprobar si la longitud de la lista es mayor que 2 y contiene al menos un 10')
+print(f'\t-Usaremos: longitud = len(lista1)>2, numero = lista.count(10)>=1')
+print(f'\t-Y después lo igualaremos  a una variables.')
+longitud = len(lista)>2
+numero = lista.count(10)
+iscierto = all([longitud,numero])
 
+if iscierto:
+    print("Se cumple")
+else:
+    print("No se cumple")
 
+print(f'\t-Ahora utilizaremos una verdadera para ver si se cumple con any')
+longitud = len(lista)>5
+numero = lista.count(10)
 
+iscierto = any([longitud,numero])
+
+if iscierto:
+    print("Se cumple")
+else:
+    print("No se cumple")
