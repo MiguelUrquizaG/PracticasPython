@@ -110,6 +110,9 @@ print(f'\t-Para hacer esto hay dos formas 1.sorted(lista) o 2. sorted(lista,reve
 print(f'\t-Observa esta lista --> {lista3}')
 print(f'\t-Resultado normal: {sorted(lista3)}')
 print(f'\t-Resultado invertido: {sorted(lista3,reverse=True)}')
+#Invertir una lista
+#lista.reverse Modifica la lista original
+#list(reversed(lista)) No modifica la original
 print("-----------------------------------------------------------------------------------------------")
 print(f'14.Longitud de una lista')
 print(f'\t-Para ello utilizaremos len(lista)')
