@@ -56,6 +56,7 @@ print(f'\t-El resultado es --> {lista}')
 print("-----------------------------------------------------------------------------------------------")
 print("7.Borrar elementos")
 print(f'\t-Para borrar un elemento de una lista hay dos formas: del lista[indiceAEliminar] o lista.remove(numeroaEliminar)')   
+print(f'\t-Son listas dinámicas es decir que se va adaptando el tamaño a la cantidad de valores.')   
 print(f'\t-Observa esta lista --> {lista}')
 print(f'A continuación eliminaremos mendiante indice usando del lista[1]')
 del lista [1]
