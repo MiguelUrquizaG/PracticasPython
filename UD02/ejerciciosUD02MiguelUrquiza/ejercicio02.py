@@ -108,9 +108,10 @@ print(f'\t-En este caso da error ya que solo funciona si tus elementos de la lis
 print("-----------------------------------------------------------------------------------------------")
 print(f'13.Ordenar una lista')
 print(f'\t-Para hacer esto hay dos formas 1.sorted(lista) o 2. sorted(lista,reverse=True)')
-print(f'\t-Observa esta lista --> {lista3}')
-print(f'\t-Resultado normal: {sorted(lista3)}')
-print(f'\t-Resultado invertido: {sorted(lista3,reverse=True)}')
+print(f'\t-Observa esta lista --> {lista3}') 
+print(f'\t-Resultado normal: {sorted(lista3)}')#Esta no modifica la original.
+print(f'\t-Resultado invertido: {sorted(lista3,reverse=True)}') 
+#Utilizar .sort() Esta modifica la original.
 #Invertir una lista
 #lista.reverse Modifica la lista original
 #list(reversed(lista)) No modifica la original
