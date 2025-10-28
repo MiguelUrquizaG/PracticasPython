@@ -4,3 +4,4 @@ igual a la primera, pero al revés (no se trata de escribir la lista al revés, 
 '''
 
 listaOriginal=[]
+cantPalabras = int(input(""))
