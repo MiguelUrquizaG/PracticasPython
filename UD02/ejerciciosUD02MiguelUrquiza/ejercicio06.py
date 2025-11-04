@@ -36,6 +36,11 @@ else:
     listaPalabras[indice]=palabraSustituta  
             
 
+'''
+for i in range(len(palabras)):
+    if palabras[i] == palabraaSustituir:
+        palabras[i] = palabraSustituta
+'''
 
 print(f'El resultado es: {listaPalabras}')
 

@@ -29,6 +29,10 @@ if listaPalabras.count(palabraAEliminar)>1:
 else:
     listaPalabras.remove(palabraAEliminar)
 
+'''
+while palabraAEliminar in listaPalabras:
+    listaPalabras.remove(palabraAEliminar)
+'''
 
 print(f'El resultado es: {listaPalabras}')
 
