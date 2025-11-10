@@ -24,7 +24,8 @@ for palabra2 in lista2:
     if lista1.count(palabra2)>0:
         for palabra in lista1:
             if palabra == palabra2:
-                lista1.remove(palabra)
+                while palabra in lista1:
+                    lista1.remove(palabra2)
 
 print(f'El resultado de la lista 1 es: {lista1}')
 
