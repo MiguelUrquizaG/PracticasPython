@@ -54,6 +54,7 @@ while opcion!=0:
                 clave = input('Introduzca la palabra que desea añadir: ')
                 valor = input('Introduzca el significado de esta palabra: ')
                 palabrasFavoritas[clave] = valor
+                #palabrasFavoritas={clave:valor}
             
             diccionario.update(palabrasFavoritas)
         case 6:

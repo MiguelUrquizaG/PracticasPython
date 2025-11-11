@@ -64,7 +64,13 @@ while opcion !=0:
             media = sum(listaRecaudado)/len(listaRecaudado)
             print(f'La media recaudada es: {media}€')
         case 9:
-            porcentajeDiasOcupados = round((len(listaRecaudado)*base)/cantDias,2)
+            cantDiasRecaudado =0
+
+            for dias in listaRecaudado:
+                if dias>=1:
+                    cantDiasRecaudado+=1
+            
+            porcentajeDiasOcupados = round((cantDiasRecaudado*base)/cantDias,2)
             print(f'El porcentaje de días ocupados (sobre 30) es: {porcentajeDiasOcupados}%')
         case 10:
             listaRecaudado.sort()
