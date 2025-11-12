@@ -26,6 +26,7 @@ while nombre!='0':
 
 max = float(input("Introduce el valor máximo de kms: "))
 min = float(input("Introduce el valor mínimo de kms: "))
+#Se puede poner como int para que redondee
 for i in range(0,len(nombreConductores)):
     kms.append([0]*cantDiasSemana)
     for j in range(cantDiasSemana):
