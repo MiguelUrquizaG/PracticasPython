@@ -1,0 +1,20 @@
+Nombre: Miguel
+Apellido1: Urquiza
+Apellido2: Garcia
+Edad: 22
+Nombre: 	0
+Apellido1:	 Rus
+Apellido2:	Morales
+Edad: 	20
+Nombre: 	Miguel
+Apellido1:	 Urquiza
+Apellido2:	García
+Edad: 	22
+Nombre: 	Maria Cristina
+Apellido1:	 Rubio
+Apellido2:	Rodriguez
+Edad: 	23
+Nombre: 	Cristina
+Apellido1:	 Rus
+Apellido2:	Morales
+Edad: 	230
