@@ -9,5 +9,8 @@ cantidad=len(fichero.readlines())
 fichero.close()
 fichero = open('ejercicio04/texto.txt','r')
 
-for i, linea in enumerate(list(fichero.readlines())):
-    numerado.write("Linea: "+str(i)+linea)
+for i, linea in enumerate(fichero.readlines()):
+    numerado.write("Linea: "+str(i+1)+' '+linea)
+
+fichero.close()
+numerado.close()

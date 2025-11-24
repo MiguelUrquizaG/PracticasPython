@@ -15,3 +15,5 @@ for i in range(cantidad):
     if not fichero.readline().startswith("\n"):
         contadorLineas+=1
 print("La cantidad de lineas NO vacias son: ",contadorLineas)
+
+fichero.close()
