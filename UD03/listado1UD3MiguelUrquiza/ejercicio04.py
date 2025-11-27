@@ -3,3 +3,7 @@ Escriba un programa que pida un número y dibuje dos cuadrados de ese número de
 diagonal, como muestran los ejemplos siguientes:
 '''
 
+longitudDiagonales = int(input('Introduzca la longitud de la diagonal: '))
+
+def doble_Cuadrado(longitud):
+    
