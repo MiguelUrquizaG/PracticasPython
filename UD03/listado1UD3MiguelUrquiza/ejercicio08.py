@@ -11,5 +11,7 @@ def maraton_series(horas):
     while horas >=24:
         horas -= 24
         dias+=1
+    return (dias,horas)
     
-    
+
+print(maraton_series(horasVistas))
