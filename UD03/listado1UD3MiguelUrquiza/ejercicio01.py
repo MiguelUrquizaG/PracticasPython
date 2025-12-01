@@ -2,6 +2,7 @@
 Escriba un programa que pida un número. Después pregunte cuántos números se van a introducir, pida
 esos números, y escriba cuántos de esos números era mayor que el anterior.
 '''
+# Este está más o menos igual.
 
 numInicial= int(input('Introduzca un número: '))
 cantNumeros = int(input('Introduzca cuántos números desea introducir: '))
