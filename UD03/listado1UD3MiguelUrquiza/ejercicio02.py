@@ -14,7 +14,7 @@ listaNumeros=[]
 
 def ordenar_lista(cantNumeros):
     #listaNumeros = [numero1,numero2,numero3]
-
+    # No se leen numeros dentro de una función
     for _ in range (cantNumeros):
         num = int(input('Introduzca el número: '))
         # while num in listaNumeros:
@@ -31,10 +31,6 @@ def ordenar_lista(cantNumeros):
             listaNumeros.append(maxNum)
 
     listaNumeros.remove(minNum)
-    
-
-    
-
     listaNumeros.insert(0,minNum)
     
 

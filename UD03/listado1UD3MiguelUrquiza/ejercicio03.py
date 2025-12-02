@@ -11,8 +11,8 @@ def compare_numbers(cantidadNumeros):
     nuevoNum = 0
     for _ in range(cantidadNumeros):
         nuevoNum = int(input('Introduzca un número: '))
-        if(nuevoNum > numAnterior and not primero):
-            print(f'El nuevo número ({nuevoNum}) es mayor que el anterior ({numAnterior})')
+        if(nuevoNum < numAnterior and not primero):
+            print(f'El nuevo número ({nuevoNum}) no es mayor que el anterior ({numAnterior})')
         primero = False
         numAnterior = nuevoNum
 
