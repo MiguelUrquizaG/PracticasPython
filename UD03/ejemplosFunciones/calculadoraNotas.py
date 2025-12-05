@@ -7,6 +7,7 @@ def calcular_media(diccionarioNotas:dict):
     media3=0
 
     for criterio,nota in notas.items():
+        
         for notaIndividual in nota:
             media += notaIndividual
     
