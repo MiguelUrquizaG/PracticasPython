@@ -21,3 +21,4 @@ class Droid:
 prueba = Droid()
 
 #print(prueba.name)
+#Python no tiene sobrecarga como tal
