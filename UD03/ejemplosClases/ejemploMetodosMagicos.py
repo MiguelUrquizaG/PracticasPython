@@ -43,3 +43,5 @@ droid2 = Droid('R2D2',91)
 droid3 = droid1 + droid2
 
 print(f'Fusion droid: \n{droid3.name} with power {droid3.power}')
+#Al objeto que pasamos por parámetro se le llama other por convención.
+
