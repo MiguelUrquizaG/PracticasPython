@@ -1,5 +1,7 @@
 import random
 
+#El generar aleatorio va aparte. Comprobar ganador.
+
 def calcular_martin_gala(cantidadDinero,apuesta,probabilidadGanar,objetivo_dinero)-> bool:
     ganado=False
     apuesta__actual=apuesta

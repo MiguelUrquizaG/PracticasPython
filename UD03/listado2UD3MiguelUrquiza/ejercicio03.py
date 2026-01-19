@@ -29,19 +29,12 @@ def calculo(inmueble):
     multiplicadorHab = 5000
     multiplicadorGaraje = 15000
     mutiplicadorZonaB = 1.5
+    antiguedad = 2026-inmueble['año']
     
-    if(inmueble['zona'] == 'A' and  inmueble['garaje']):
-        antiguedad = 2026 - inmueble['año']
+    if(inmueble['zona'] == 'A' ):
         precio = (inmueble['metros'] * multiplicadorMetros + inmueble['habitaciones']*multiplicadorHab+inmueble['garaje']*multiplicadorGaraje) * (1-antiguedad/100) 
-    elif(inmueble['zona'] == 'A' and  not inmueble['garaje']):
-        antiguedad = 2026 - inmueble['año']
-        precio = (inmueble['metros'] * multiplicadorMetros + inmueble['habitaciones']*multiplicadorHab) * (1-antiguedad/100)
-    elif(inmueble['zona'] == 'B' and inmueble['garaje']):
-        antiguedad = 2026 - inmueble['año']
+    elif(inmueble['zona'] == 'B' ):
         precio = (inmueble['metros'] * multiplicadorMetros + inmueble['habitaciones']*multiplicadorHab+inmueble['garaje']*multiplicadorGaraje) * (1-antiguedad/100) * mutiplicadorZonaB
-    else:
-        antiguedad = 2026 - inmueble['año']
-        precio = (inmueble['metros'] * multiplicadorMetros + inmueble['habitaciones']*multiplicadorHab) * (1-antiguedad/100) * mutiplicadorZonaB
     return precio
 
 
