@@ -8,13 +8,15 @@ class Figura:
     def calcular_factor_escala(self):
         pass
 
+#Factor de escala es multiplicar un número 
 
 class Rectangulo(Figura):
     def __init__(self,largo:float,ancho:float):
         self.largo = largo
         self.ancho = ancho
         super().__init__()
-    def calcular_area(self):
+        #¿Es obligatorio poner que devuelve con la flecha? No es obligatorio pero si recomendable
+    def calcular_area(self) -> float:
         return round(self.largo * self.ancho,2) 
     def calcular_perimetro(self):
         return 2*(self.largo+self.ancho)
@@ -77,6 +79,8 @@ for figura in lista:
 
 
 print(f'Circulo: {round(sumaAreasCirculo,2)} | Rectángulo: {sumaAreasRectangulo} | Triángulo: {sumaAreasTriangulo}')
+
+#Se puede usar un for en un sum(f.calcular_area for f in lista)
 
 sumaPerimetroCirculo=0.0
 sumaPerimetroRectangulo=0.0
