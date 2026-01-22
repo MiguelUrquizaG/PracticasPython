@@ -47,6 +47,7 @@ class CalculadoraYogures:
         self.yogur = yogur
         pass
     def calcular_caloria_yogur(self,cantidad,):
+        #mirar subclass
         if isinstance(YogurDesnatado):
             return self.yogur.calcular_calorias(cantidad)
         elif isinstance(PostresProteinas):
