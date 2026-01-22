@@ -45,14 +45,13 @@ postreProteico = PostresProteinas(120.5,'Pera','Pascual',False,100,0)
 class CalculadoraYogures:
     def __init__(self,yogur:Yogur):
         self.yogur = yogur
-        pass
     def calcular_caloria_yogur(self,cantidad,):
         #mirar subclass
-        if isinstance(YogurDesnatado):
+        if isinstance(yogurDesnatado,YogurDesnatado):
             return self.yogur.calcular_calorias(cantidad)
-        elif isinstance(PostresProteinas):
-            return self.calcular_caloria_yogur(cantidad)
-        elif isinstance(Yogur):
+        elif isinstance(postreProteico,PostresProteinas):
+            return self.calcular_caloria_yogur()
+        elif isinstance(yogur,Yogur):
             return self.calcular_caloria_yogur(cantidad)
 print(f'El resultado es: {yogur.calcular_calorias(100)}')
 print(f'Las calorías desnatadas son {yogurDesnatado.calcular_calorias(100)}')
