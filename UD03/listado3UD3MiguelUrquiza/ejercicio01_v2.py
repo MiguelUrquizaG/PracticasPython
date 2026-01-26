@@ -58,3 +58,5 @@ print(f'El postre de proteínas tiene {postreProteico.calcular_calorias()}')
 print(f'El resultado es: {CalculadoraYogures.calcular_caloria_yogur(yogur)}')
 
 #Versión 2
+#def comprobar_petit(method:function):
+    
