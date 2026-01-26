@@ -44,7 +44,6 @@ postreProteico = PostresProteinas(120.5,'Pera','Pascual',False,100,100,0)
 
 
 class CalculadoraYogures:
-<<<<<<< HEAD
     def __init__(self,yogur:Yogur):
         self.yogur = yogur
     def calcular_caloria_yogur(self,cantidad,):
@@ -58,46 +57,3 @@ class CalculadoraYogures:
 print(f'El resultado es: {yogur.calcular_calorias(100)}')
 print(f'Las calorías desnatadas son {yogurDesnatado.calcular_calorias(100)}')
 print(f'El postre de proteínas tiene {postreProteico.calcular_calorias(100)}')
-=======
-    def __init__(self):
-        pass
-    def calcular_caloria_yogur(self,yogur:Yogur):
-        #mirar subclass
-        if isinstance(yogur,YogurDesnatado):
-            return yogur.calcular_calorias()
-        elif isinstance(yogur,PostresProteinas):
-            return yogur.calcular_calorias()
-        elif isinstance(yogur,Yogur):
-            return yogur.calcular_calorias()
-        
-class CalculadoraMultiplesYogures:
-    def __init__(self,yogures:list):
-        self.yogures = yogures
-        self.calculadora = CalculadoraYogures()
-        
-    def calcular(self):
-        resultado = 0.0
-        for yogur in self.yogures:
-            resultado += self.calculadora.calcular_caloria_yogur(yogur)
-            
-        return resultado
-        
-            
-        
-# calculadora = CalculadoraYogures(yogur)        
-        
-# print(f'El resultado es: {yogur.calcular_calorias(100)}')
-# print(f'Las calorías desnatadas son {yogurDesnatado.calcular_calorias(100)}')
-# print(f'El postre de proteínas tiene {postreProteico.calcular_calorias(100)}')
-# print(f'Las calorías del yogur pasado son {calculadora.calcular_caloria_yogur(100)}')
-
-yogur1 = Yogur(120.5,'Pera','wee',False,100)
-yogur2 = YogurDesnatado(120.5,'Pera','wee',False,100,30,0)
-yogur3 = PostresProteinas(120.5,'Pera','wee',False,100,20,0)
-
-lista : list[Yogur]=[yogur1,yogur2,yogur3]
-
-calculadoraMultiple = CalculadoraMultiplesYogures(lista)
-
-print(f'El resultado es {calculadoraMultiple.calcular()}')
->>>>>>> a970a3d39931b413e9e01fab5789510442c81020
