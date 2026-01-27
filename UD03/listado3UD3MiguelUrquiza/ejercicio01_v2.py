@@ -6,6 +6,7 @@
 
 
 class Yogur:
+    CANTIDAD100 = 120.5
     def __init__(self,calorias:float,sabor:str,marca:str,trocitos:bool,cantidad:float):
         
         self.calorias = calorias
