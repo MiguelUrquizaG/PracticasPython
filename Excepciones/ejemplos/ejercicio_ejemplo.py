@@ -5,6 +5,8 @@ def get_int():
             numero = int(input('Introduzca un número: '))
         except ValueError:
             print('Ha habido un problema con el número introducido.')
+        except Exception:
+            print('Ups algo malo ha ocurrido.')
         else:
             isValido = True
             print(f'El resultado es {numero}') 
