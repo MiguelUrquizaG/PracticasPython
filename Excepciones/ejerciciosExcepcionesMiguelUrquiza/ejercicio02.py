@@ -8,7 +8,13 @@ class diasAnyoNoValidos(Exception):
     def __init__(self, message):
         super().__init__(message)
 
+class cantComida(Exception):
+    def __init__(self, message):
+        super().__init__(message)
 
+class cantInsectos(Exception):
+    def __init__(self, message):
+        super().__init__(message)
 
 try:
 
@@ -49,7 +55,8 @@ try:
             self.cant_comidas=cant_comidas
             super().__init__(coste_diario)
         def calcular_coste(self, dias_anyo,coste_comida_especial,coste_insectos):
-            
+            if self.cant_comidas<0:
+                raise cantComida('La cantidad de comidas no puede ser menor a 0')
             coste_extra = (round((dias_anyo/7))*self.cant_comidas)*coste_comida_especial
             return super().calcular_coste(dias_anyo,coste_comida_especial,coste_insectos) + coste_extra
         
@@ -59,6 +66,8 @@ try:
             super().__init__(coste_diario)
         def calcular_coste(self, dias_anyo, coste_comida_especial,coste_insectos):
             
+            if self.cant_insectos<0:
+                raise cantInsectos('La cantidad de insectos no puede ser menor a 0')
             coste_insectos_dia = self.cant_insectos * coste_insectos
             
             dias_semanas = (dias_anyo/7)*2
@@ -103,16 +112,20 @@ try:
     animal_2 = Animal(100)
 
     animal2 = Oso(100,2)
+    
+    serpiente =Serpiente(1,2)
+    
+    serpiente.calcular_coste(365,100,2)
 
     print(animal.calcular_coste())
 
-    lista_animales = [animal]
+    lista_animales = [animal,animal2]
 
     zoo =Zoo(lista_animales)
 
 
 
-    print(f'{zoo.calcular_descuento('x',30,365,20,10)}')
+    print(f'{zoo.calcular_descuento(1,30,365,20,10)}')
     print(f'{zoo.calcular_gasto_osos(365,100,10)}')
 
     print(f'{animal.calcular_coste(365,100,100)}')
@@ -126,6 +139,10 @@ try:
 except costeDiarioInferiorCero as e:
     print(e)
 except diasAnyoNoValidos as e:
+    print(e)
+except cantComida as e:
+    print(e)
+except cantInsectos as e:
     print(e)
 except TypeError as e:
     print('El tipo introducido en uno de los parámetros no es válido')
