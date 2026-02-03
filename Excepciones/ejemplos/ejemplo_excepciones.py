@@ -46,3 +46,11 @@ nums = [3,2,1]
 
 intdiv4(nums)
 
+def _sum(a:int,b:int)->int:
+    if isinstance(a,int)and isinstance(b,int):
+        return a+b
+    raise TypeError('Los números tienen que ser enteros.')
+
+print(_sum(3,'s'))
+
+#Las aserciones es una herramienta en la que si en programa no se cumple lo que quiero me avisa.
